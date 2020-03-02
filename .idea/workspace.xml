@@ -2,16 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c8bfc9-e78b-4765-a45f-41b73f3395a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ERB File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1YaE2m9t0xXARKyxylxDRWP0i2t" />
   <component name="ProjectViewState">
@@ -20,7 +53,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -123,6 +158,28 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5bd35b55" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -134,7 +191,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583172099940</updated>
-      <workItem from="1583172103446" duration="391000" />
+      <workItem from="1583172103446" duration="1494000" />
+      <workItem from="1583174301396" duration="4075000" />
     </task>
     <servers />
   </component>
@@ -142,9 +200,72 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="588" y="274" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583177970575">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state x="588" y="274" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1173@67.27.1853.1173" timestamp="1583177970575" />
+    <state x="626" y="353" width="724" height="519" key="#com.intellij.ide.util.ExportDialog" timestamp="1583177036298">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state x="626" y="353" width="724" height="519" key="#com.intellij.ide.util.ExportDialog/67.27.1853.1173@67.27.1853.1173" timestamp="1583177036298" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583172416137">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583172416137" />
+    <state width="1807" height="393" key="GridCell.Tab.0.bottom" timestamp="1583177994005">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598934" />
+    <state width="1807" height="393" key="GridCell.Tab.0.bottom/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994005" />
+    <state width="1807" height="393" key="GridCell.Tab.0.center" timestamp="1583177994003">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598933" />
+    <state width="1807" height="393" key="GridCell.Tab.0.center/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994003" />
+    <state width="1807" height="393" key="GridCell.Tab.0.left" timestamp="1583177993997">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598933" />
+    <state width="1807" height="393" key="GridCell.Tab.0.left/67.27.1853.1173@67.27.1853.1173" timestamp="1583177993997" />
+    <state width="1807" height="393" key="GridCell.Tab.0.right" timestamp="1583177994004">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598933" />
+    <state width="1807" height="393" key="GridCell.Tab.0.right/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994004" />
+    <state width="1807" height="393" key="GridCell.Tab.1.bottom" timestamp="1583177994012">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598934" />
+    <state width="1807" height="393" key="GridCell.Tab.1.bottom/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994012" />
+    <state width="1807" height="393" key="GridCell.Tab.1.center" timestamp="1583177994008">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598934" />
+    <state width="1807" height="393" key="GridCell.Tab.1.center/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994008" />
+    <state width="1807" height="393" key="GridCell.Tab.1.left" timestamp="1583177994007">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598934" />
+    <state width="1807" height="393" key="GridCell.Tab.1.left/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994007" />
+    <state width="1807" height="393" key="GridCell.Tab.1.right" timestamp="1583177994008">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598934" />
+    <state width="1807" height="393" key="GridCell.Tab.1.right/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994008" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1583177218888">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/67.27.1853.1173@67.27.1853.1173" timestamp="1583177218888" />
+    <state x="657" y="283" key="run.anything.popup" timestamp="1583175955841">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state x="657" y="283" key="run.anything.popup/67.27.1853.1173@67.27.1853.1173" timestamp="1583175955841" />
+    <state x="584" y="274" width="800" height="677" key="scopes" timestamp="1583177532700">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state x="584" y="274" width="800" height="677" key="scopes/67.27.1853.1173@67.27.1853.1173" timestamp="1583177532700" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/socNetwork@Development__socNetwork.rcov" NAME="Development: socNetwork Coverage Results" MODIFIED="1583177888759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="socNetwork" />
   </component>
 </project>
