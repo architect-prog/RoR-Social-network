@@ -9,7 +9,8 @@ gem 'rails', '~> 5.2.1'
 #gem 'sqlite3'
 gem 'pg'
 gem 'devise'
-gem 'dotenv-rails'
+gem 'dotenv-rails', :groups => [:development, :test]
+#gem 'letter_opener', :groups => [:development]
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets

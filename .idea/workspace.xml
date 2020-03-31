@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c8bfc9-e78b-4765-a45f-41b73f3395a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20200302181819_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200302181819_devise_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/.keep" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +67,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/users_info" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/users_info" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/application" />
+      <recent name="$PROJECT_DIR$/app/views" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: socNetwork">
     <configuration name="Development: socNetwork" type="RailsRunConfigurationType" factoryName="Rails">
@@ -168,11 +187,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@5bd35b55" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -192,7 +206,20 @@
       <option name="presentableId" value="Default" />
       <updated>1583172099940</updated>
       <workItem from="1583172103446" duration="1494000" />
-      <workItem from="1583174301396" duration="4075000" />
+      <workItem from="1583174301396" duration="11591000" />
+      <workItem from="1583186848874" duration="18000" />
+      <workItem from="1583186940188" duration="428000" />
+      <workItem from="1583212326760" duration="9044000" />
+      <workItem from="1583223250849" duration="143000" />
+      <workItem from="1583229783660" duration="4235000" />
+      <workItem from="1583446414374" duration="244000" />
+      <workItem from="1584374876171" duration="1207000" />
+      <workItem from="1584526725416" duration="3538000" />
+      <workItem from="1584604819735" duration="5924000" />
+      <workItem from="1585618522068" duration="2882000" />
+      <workItem from="1585670041700" duration="10541000" />
+      <workItem from="1585690881575" duration="1031000" />
+      <workItem from="1585692796345" duration="631000" />
     </task>
     <servers />
   </component>
@@ -200,58 +227,83 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="588" y="274" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583177970575">
+    <state x="588" y="274" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583178906115">
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
-    <state x="588" y="274" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1173@67.27.1853.1173" timestamp="1583177970575" />
+    <state x="588" y="274" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1173@67.27.1853.1173" timestamp="1583178906115" />
+    <state x="709" y="417" width="567" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583180719903">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state x="709" y="417" width="567" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1173@67.27.1853.1173" timestamp="1583180719903" />
     <state x="626" y="353" width="724" height="519" key="#com.intellij.ide.util.ExportDialog" timestamp="1583177036298">
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
     <state x="626" y="353" width="724" height="519" key="#com.intellij.ide.util.ExportDialog/67.27.1853.1173@67.27.1853.1173" timestamp="1583177036298" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583172416137">
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2" timestamp="1583184792055">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
+    <state x="556" y="96" width="865" height="912" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1583184792055" />
+    <state x="776" y="342" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583212911116">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583172416137" />
-    <state width="1807" height="393" key="GridCell.Tab.0.bottom" timestamp="1583177994005">
-      <screen x="67" y="27" width="1853" height="1173" />
+    <state x="776" y="342" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1173@67.27.1853.1173" timestamp="1583212911116" />
+    <state width="1807" height="284" key="GridCell.Tab.0.bottom" timestamp="1585694074043">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598934" />
-    <state width="1807" height="393" key="GridCell.Tab.0.bottom/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994005" />
-    <state width="1807" height="393" key="GridCell.Tab.0.center" timestamp="1583177994003">
-      <screen x="67" y="27" width="1853" height="1173" />
+    <state width="1727" height="258" key="GridCell.Tab.0.bottom/67.27.1773.973@67.27.1773.973" timestamp="1585692826569" />
+    <state width="1729" height="258" key="GridCell.Tab.0.bottom/67.27.1775.973@67.27.1775.973" timestamp="1585674454583" />
+    <state width="1807" height="284" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585694074043" />
+    <state width="1807" height="393" key="GridCell.Tab.0.bottom/67.27.1853.1173@67.27.1853.1173" timestamp="1583181548680" />
+    <state width="1807" height="284" key="GridCell.Tab.0.center" timestamp="1585694074041">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598933" />
-    <state width="1807" height="393" key="GridCell.Tab.0.center/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994003" />
-    <state width="1807" height="393" key="GridCell.Tab.0.left" timestamp="1583177993997">
-      <screen x="67" y="27" width="1853" height="1173" />
+    <state width="1727" height="258" key="GridCell.Tab.0.center/67.27.1773.973@67.27.1773.973" timestamp="1585692826568" />
+    <state width="1729" height="258" key="GridCell.Tab.0.center/67.27.1775.973@67.27.1775.973" timestamp="1585674454583" />
+    <state width="1807" height="284" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585694074041" />
+    <state width="1807" height="393" key="GridCell.Tab.0.center/67.27.1853.1173@67.27.1853.1173" timestamp="1583181548679" />
+    <state width="1807" height="284" key="GridCell.Tab.0.left" timestamp="1585694074036">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598933" />
-    <state width="1807" height="393" key="GridCell.Tab.0.left/67.27.1853.1173@67.27.1853.1173" timestamp="1583177993997" />
-    <state width="1807" height="393" key="GridCell.Tab.0.right" timestamp="1583177994004">
-      <screen x="67" y="27" width="1853" height="1173" />
+    <state width="1727" height="258" key="GridCell.Tab.0.left/67.27.1773.973@67.27.1773.973" timestamp="1585692826567" />
+    <state width="1729" height="258" key="GridCell.Tab.0.left/67.27.1775.973@67.27.1775.973" timestamp="1585674454578" />
+    <state width="1807" height="284" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585694074036" />
+    <state width="1807" height="393" key="GridCell.Tab.0.left/67.27.1853.1173@67.27.1853.1173" timestamp="1583181548677" />
+    <state width="1807" height="284" key="GridCell.Tab.0.right" timestamp="1585694074042">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598933" />
-    <state width="1807" height="393" key="GridCell.Tab.0.right/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994004" />
-    <state width="1807" height="393" key="GridCell.Tab.1.bottom" timestamp="1583177994012">
-      <screen x="67" y="27" width="1853" height="1173" />
+    <state width="1727" height="258" key="GridCell.Tab.0.right/67.27.1773.973@67.27.1773.973" timestamp="1585692826569" />
+    <state width="1729" height="258" key="GridCell.Tab.0.right/67.27.1775.973@67.27.1775.973" timestamp="1585674454583" />
+    <state width="1807" height="284" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585694074042" />
+    <state width="1807" height="393" key="GridCell.Tab.0.right/67.27.1853.1173@67.27.1853.1173" timestamp="1583181548679" />
+    <state width="1807" height="284" key="GridCell.Tab.1.bottom" timestamp="1585694074045">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598934" />
-    <state width="1807" height="393" key="GridCell.Tab.1.bottom/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994012" />
-    <state width="1807" height="393" key="GridCell.Tab.1.center" timestamp="1583177994008">
-      <screen x="67" y="27" width="1853" height="1173" />
+    <state width="1727" height="258" key="GridCell.Tab.1.bottom/67.27.1773.973@67.27.1773.973" timestamp="1585692826572" />
+    <state width="1729" height="258" key="GridCell.Tab.1.bottom/67.27.1775.973@67.27.1775.973" timestamp="1585674454584" />
+    <state width="1807" height="284" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1585694074045" />
+    <state width="1807" height="393" key="GridCell.Tab.1.bottom/67.27.1853.1173@67.27.1853.1173" timestamp="1583181548685" />
+    <state width="1807" height="284" key="GridCell.Tab.1.center" timestamp="1585694074044">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598934" />
-    <state width="1807" height="393" key="GridCell.Tab.1.center/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994008" />
-    <state width="1807" height="393" key="GridCell.Tab.1.left" timestamp="1583177994007">
-      <screen x="67" y="27" width="1853" height="1173" />
+    <state width="1727" height="258" key="GridCell.Tab.1.center/67.27.1773.973@67.27.1773.973" timestamp="1585692826570" />
+    <state width="1729" height="258" key="GridCell.Tab.1.center/67.27.1775.973@67.27.1775.973" timestamp="1585674454584" />
+    <state width="1807" height="284" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1585694074044" />
+    <state width="1807" height="393" key="GridCell.Tab.1.center/67.27.1853.1173@67.27.1853.1173" timestamp="1583181548684" />
+    <state width="1807" height="284" key="GridCell.Tab.1.left" timestamp="1585694074044">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598934" />
-    <state width="1807" height="393" key="GridCell.Tab.1.left/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994007" />
-    <state width="1807" height="393" key="GridCell.Tab.1.right" timestamp="1583177994008">
-      <screen x="67" y="27" width="1853" height="1173" />
+    <state width="1727" height="258" key="GridCell.Tab.1.left/67.27.1773.973@67.27.1773.973" timestamp="1585692826570" />
+    <state width="1729" height="258" key="GridCell.Tab.1.left/67.27.1775.973@67.27.1775.973" timestamp="1585674454583" />
+    <state width="1807" height="284" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1585694074044" />
+    <state width="1807" height="393" key="GridCell.Tab.1.left/67.27.1853.1173@67.27.1853.1173" timestamp="1583181548684" />
+    <state width="1807" height="284" key="GridCell.Tab.1.right" timestamp="1585694074044">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583173598934" />
-    <state width="1807" height="393" key="GridCell.Tab.1.right/67.27.1853.1173@67.27.1853.1173" timestamp="1583177994008" />
+    <state width="1727" height="258" key="GridCell.Tab.1.right/67.27.1773.973@67.27.1773.973" timestamp="1585692826570" />
+    <state width="1729" height="258" key="GridCell.Tab.1.right/67.27.1775.973@67.27.1775.973" timestamp="1585674454584" />
+    <state width="1807" height="284" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1585694074044" />
+    <state width="1807" height="393" key="GridCell.Tab.1.right/67.27.1853.1173@67.27.1853.1173" timestamp="1583181548685" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1583177218888">
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
@@ -264,8 +316,12 @@
       <screen x="67" y="27" width="1853" height="1173" />
     </state>
     <state x="584" y="274" width="800" height="677" key="scopes/67.27.1853.1173@67.27.1853.1173" timestamp="1583177532700" />
+    <state x="656" y="287" width="672" height="678" key="search.everywhere.popup" timestamp="1583215294911">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state x="656" y="287" width="672" height="678" key="search.everywhere.popup/67.27.1853.1173@67.27.1853.1173" timestamp="1583215294911" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/socNetwork@Development__socNetwork.rcov" NAME="Development: socNetwork Coverage Results" MODIFIED="1583177888759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="socNetwork" />
+    <SUITE FILE_PATH="coverage/socNetwork@Development__socNetwork.rcov" NAME="Development: socNetwork Coverage Results" MODIFIED="1585694060266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="socNetwork" />
   </component>
 </project>
