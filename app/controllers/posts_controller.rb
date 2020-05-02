@@ -23,6 +23,9 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    user = User.find(params[:user_id])
+    @user = user
+    @post = user.posts.find(params[:id])
   end
 
   # POST /posts
@@ -47,12 +50,13 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-    @user = User.find(params[:user_id])
-    @post = @user.posts.find(params[:id])
+    user = User.find(params[:user_id])
+    @user = user
+    @post = user.posts.find(params[:id])
 
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to edit_user_post_path(@user.id, @post.id), notice: 'Post was successfully updated.' }
+        format.html { redirect_to user_post_path(@user.id, @post.id), notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit }
