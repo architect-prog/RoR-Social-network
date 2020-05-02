@@ -1,10 +1,15 @@
-Rails.application.routes.draw do   
-   devise_for :users, controllers: { registrations: 'users/registrations' } do 
-      resources :posts, controller: posts
-   end
+Rails.application.routes.draw do 
 
-   match 'users/:id/destroy' => 'removing#destroy', :via => :delete, :as => :admin_destroy_user
-   get '/users/:id', to: 'users_info#show', :as => :users_info
-   get '/users', to: 'users_info#all'
    root to: 'application#index'
+   get '/users', to: 'users#all'    
+
+   devise_for :users  
+
+   resources :users, only: [:show, :destroy] do
+      resources :posts
+   end
+  
+   
+   
+   
 end

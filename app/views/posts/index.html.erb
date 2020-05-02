@@ -12,18 +12,23 @@
   </thead>
 
   <tbody>
-    <% @posts.each do |post| %>
+    <% @user.posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
         <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', user_post_path(@user.id, post.id) %></td>
+        <%if current_user.id == @user.id %>        
+          <td><%= link_to 'Edit', edit_user_post_path(@user.id, post.id) %></td>
+          <td><%= link_to 'Destroy', user_post_path(@user.id, post.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>        
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Post', new_post_path %>
+<%if current_user.id == @user.id %>
+  <%= link_to 'New Post', new_user_post_path(@user.id) %>
+<% end %>
+<br>
+<%= link_to 'Back', root_path %>
