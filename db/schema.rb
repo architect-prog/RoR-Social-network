@@ -61,7 +61,6 @@ ActiveRecord::Schema.define(version: 2020_05_01_193853) do
     t.datetime "updated_at", null: false
     t.string "firstname", default: "", null: false
     t.string "lastname", default: "", null: false
-    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
