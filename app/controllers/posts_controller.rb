@@ -4,15 +4,16 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index     
-    user = User.find(params[:user_id])
-    @posts = user.posts
-    @user = user
+    @user = User.find(params[:user_id])
+    @posts = @user.posts
+    
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
     @user = User.find(params[:user_id])
+    @posts = @user.posts
   end
 
   # GET /posts/new
@@ -22,17 +23,14 @@ class PostsController < ApplicationController
   end
 
   # GET /posts/1/edit
-  def edit
-    user = User.find(params[:user_id])
-    @user = user
-    @post = user.posts.find(params[:id])
+  def edit     
+    @user = User.find(params[:user_id])
+    @post = @user.posts.find(params[:id])
   end
 
   # POST /posts
   # POST /posts.json
   def create
-    #@post = Post.new(post_params)
-
     @user = User.find(params[:user_id])
     @post = @user.posts.create(post_params)
 

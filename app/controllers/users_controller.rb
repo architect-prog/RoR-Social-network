@@ -18,7 +18,7 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
       @user.destroy
       
-      if current_user.id == @user.id
+      if current_user == nil || current_user.id == @user.id 
         redirect_to root_path, notice: 'User deleted.'
       else
         redirect_to users_path, notice: 'User deleted.'
