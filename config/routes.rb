@@ -9,10 +9,10 @@ Rails.application.routes.draw do
       member do
          get :following, :followers
       end   
-      resources :posts
+      resources :posts do 
+         resources: :comments
+      end
    end
   
-   resources :relationships, only: [:create, :destroy]
-   
-   
+   resources :relationships, only: [:create, :destroy]   
 end

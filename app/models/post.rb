@@ -6,6 +6,9 @@ class Post < ApplicationRecord
     validates :body, presence: true
     validate :image_type
 
+    has_many :comments
+    validates :title, presence: true, length: { minimum: 5 }
+
     def thumbnail input
         self.images[input].variant(resize: '350x300!').processed
     end
