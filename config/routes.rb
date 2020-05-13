@@ -10,7 +10,7 @@ Rails.application.routes.draw do
          get :following, :followers
       end   
       resources :posts do 
-         resources: :comments
+         resources :comments
       end
    end
   

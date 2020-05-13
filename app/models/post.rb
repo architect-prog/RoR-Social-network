@@ -6,7 +6,7 @@ class Post < ApplicationRecord
     validates :body, presence: true
     validate :image_type
 
-    has_many :comments
+    has_many :comments, dependent: :destroy
     validates :title, presence: true, length: { minimum: 5 }
 
     def thumbnail input

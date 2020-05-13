@@ -12,6 +12,12 @@
   <%= @post.body %>
 </p>
 
+<h2>Comments</h2>
+<%= render @post.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
 <% if current_user.id == @user.id %>  
   <%= link_to 'Edit', edit_user_post_path(@user.id, @post.id) %>
 <% end %>
