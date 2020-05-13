@@ -1,14 +1,23 @@
-<span>Welcome, <%= current_user.firstname %></span><br>
+<% if user_signed_in? %>
+  <%= link_to 'Posts', user_posts_path(current_user.id) %><br>
+  <%= link_to 'Users', users_path %><br>
+  <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %><br>   
 
-<table  border="1" style="border-collapse: collapse;">
-  <tr>
-    <th>firstname</th><th>lastname</th><th>show</th>
-  </tr>
-  <% current_user.following.each do |followed| %>
-    <tr>      
-      <td><%= followed.firstname %></td>
-      <td><%= followed.lastname %></td>    
-      <td><%= link_to 'Show', user_path(followed) %></td>
+  <span>Welcome, <%= current_user.firstname %></span><br>
+
+  <table  border="1" style="border-collapse: collapse;">
+    <tr>
+      <th>firstname</th><th>lastname</th><th>show</th>
     </tr>
-  <% end %>
-</table>
+    <% current_user.following.each do |followed| %>
+      <tr>      
+        <td><%= followed.firstname %></td>
+        <td><%= followed.lastname %></td>    
+        <td><%= link_to 'Show', user_path(followed) %></td>
+      </tr>
+    <% end %>
+  </table>
+
+<% else %>
+  <%= link_to 'Sign in', new_user_session_path %> or <%= link_to 'Registration', new_user_registration_path %>
+<% end %>
