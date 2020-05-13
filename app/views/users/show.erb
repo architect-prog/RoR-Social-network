@@ -31,5 +31,13 @@
 <br>
 
 <%if current_user.id == @user.id %>
-    <%= link_to 'New Post', new_post_path %>
+    <%= link_to 'New Post', new_post_path %><br>
 <% end %>
+
+<% if current_user.following?(@user) %>
+    <%= link_to 'Unfolow', relationship_path(user_id: @user.id), method: :delete %><br>
+<% else %>
+    <%= link_to 'Follow', relationships_path(user_id: @user.id), method: :post %><br>
+<% end %>
+
+<%= link_to 'Back', users_path %>
