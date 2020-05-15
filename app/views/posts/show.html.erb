@@ -12,10 +12,10 @@
   <%= @post.body %>
 </p>
 
+<h5>This post have <%= @post.comments.count %> comments</h5>
+
 <h2>Comments</h2>
-<p>
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-</p>
+<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
 <%= render @post.comments %>
 
 <h2>Add a comment:</h2>

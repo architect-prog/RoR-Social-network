@@ -1,8 +1,10 @@
-<%= @user.email %><br>
-<%= @user.firstname %><br>
-<%= @user.lastname %>
+Firstname: <%= @user.firstname %><br>
+Lastname: <%= @user.lastname %><br>
+Email: <%= @user.email %><br>
 
-<h1>Posts</h1>
+<h5><%= @user.firstname %> have <%= @user.followers.count %> followers</h5>
+
+<h2>Posts</h2>
 
 <table>
   <thead>
