@@ -12,6 +12,9 @@ Things you may want to cover:
 * Deployment instructions
 * ...
 
+## настройка проекта
+* В файле web.env заполните отсутствующие поля
+
 ## soc-network
 Запускайте через ветку мастер и следуйте инструкциям
 * branch master
