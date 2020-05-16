@@ -1,0 +1,1 @@
+rails ansible_host=ec2-35-178-167-163.eu-west-2.compute.amazonaws.com ansible_user=ubuntu

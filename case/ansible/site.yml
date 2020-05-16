@@ -1,0 +1,46 @@
+- hosts: rails
+  gather_facts: no
+  remote_user: ubuntu
+  become: yes
+  tasks:
+    - name: update_all_packages
+      apt: 
+        upgrade: dist
+    - name: lavr_task1
+      git: 
+        repo: "https://github.com/lwwwr/sample-rails-hw.git" 
+        dest: source1
+        accept_hostkey: yes
+        force: true
+    - name: bundle_install
+      become: true
+      become_user: ubuntu
+      command: bash -lc "bundle install" 
+      args: 
+        chdir: "/home/ubuntu/source1"
+    - name: get_access
+      become: true
+      become_user: ubuntu
+      command: bash -lc "sudo chmod -R 777 ." 
+      args: 
+        chdir: "/home/ubuntu/source1"
+    - name: yarn_check
+      become: true
+      become_user: ubuntu
+      command: bash -lc "yarn install --check-files" 
+      args:         
+        chdir: "/home/ubuntu/source1"
+    - name: auto_stop
+      become: true
+      become_user: ubuntu
+      command: bash -lc "bundle exec pumactl -F config/puma.rb stop" 
+      args:         
+        chdir: "/home/ubuntu/source1"
+      ignore_errors: true
+    - name: launch
+      become: true
+      become_user: ubuntu
+      command: bash -lc "rails s -b 0.0.0.0 -p 3003" 
+      args: 
+        chdir: "/home/ubuntu/source1"
+    

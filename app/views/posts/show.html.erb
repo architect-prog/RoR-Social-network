@@ -1,0 +1,27 @@
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<% (0...@post.images.count).each do |image| %>
+  <%= image_tag(@post.thumbnail(image)) %>
+<% end %>
+
+<p>
+  <strong>Body:</strong>
+  <%= @post.body %>
+</p>
+
+<h5>This post have <%= @post.comments.count %> comments</h5>
+
+<h2>Comments</h2>
+<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<%= render @post.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<% if current_user.id == @user.id %>  
+  <%= link_to 'Edit', edit_user_post_path(@user.id, @post.id) %>
+<% end %>
+<%= link_to 'Back', user_posts_path(@user.id) %>
