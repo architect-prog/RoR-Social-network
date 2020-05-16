@@ -3,16 +3,17 @@ development:
   encoding: unicode
   database: network_development
   pool: 5
-  timeout: 5000
-  username: eclipse
+  host: db 
+  username: postgres
   password: qwerty123
-  port: 5432
+  
 
 test:
   adapter: postgresql
   encoding: unicode
   database: network_test
   pool: 5
+  host: db
   timeout: 5000
   username: eclipse
   password: qwerty123

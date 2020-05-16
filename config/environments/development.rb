@@ -36,14 +36,14 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
 
   #Devise
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3001 }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
       :address => "smtp.gmail.com",
       :port => 587,
       :domain => "website.com",
-      :user_name => ENV['AdminEmail'],
-      :password => ENV['AdminEmailPassword'],
+      :user_name => ENV['EMAIL_LOGIN'],
+      :password => ENV['EMAIL_PASSWORD'],
       authentication: 'plain',
       enable_starttls_auto: true
   }

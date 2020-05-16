@@ -1,14 +1,10 @@
 FROM ruby:2.5.0
 
-RUN apt-get update -y && \
-    apt-get install default-mysql-client nodejs -y && \
-    gem install rails --version='5.2.4.1'
+RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 RUN mkdir /myapp
 WORKDIR /myapp
 COPY Gemfile /Gemfile
 COPY Gemfile.lock /Gemfile.lock
-RUN gem install bundler:2.1.4
-RUN bundler --version
 RUN bundle install
 COPY . /myapp
 
