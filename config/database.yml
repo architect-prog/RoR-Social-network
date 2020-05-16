@@ -5,7 +5,7 @@ development:
   pool: 5
   host: db 
   username: postgres
-  password: qwerty123
+  password: postgres
   
 
 test:
@@ -15,6 +15,6 @@ test:
   pool: 5
   host: db
   timeout: 5000
-  username: eclipse
-  password: qwerty123
+  username: postgres
+  password: postgres
   port: 5432
