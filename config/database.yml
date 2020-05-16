@@ -4,8 +4,8 @@ development:
   database: network_development
   pool: 5
   host: db 
-  username: postgres
-  password: postgres
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
   
 
 test:
@@ -15,6 +15,6 @@ test:
   pool: 5
   host: db
   timeout: 5000
-  username: postgres
-  password: postgres
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
   port: 5432
